@@ -1,0 +1,111 @@
+body {
+    /* Typography Declarations */
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+}
+
+.text-center {
+/*   aligning text for header and footer */
+  text-align: center;
+}
+
+.masthead {
+  padding: 6em 0;
+  background-image: url('http://i.imgur.com/DtdxRcV.jpg');
+/*   ran into a weird error here, when I switch between full view and edit view sometimes the background image would disappear and I'd have to go into the web tools and uncheck then recheck the option to make it visible. The space would still be held, but that was it. */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top: solid 1em rgb(88, 52, 33);
+}
+
+.masthead-intro {
+  color: honeydew;
+  /* Layout Declarations */
+  margin-bottom: 0.1em;
+  /* Typography Declarations */
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 2em;
+}
+
+.masthead-heading {
+  color: rgb(126, 153, 218);
+  /* Layout Declarations */
+  margin-top: -0.2em;
+  /* Typography Declarations */
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 6em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+/*   adding 3d shadow effect to the masthead heading */
+  text-shadow:0px 0px 0 rgb(137,180,194),1px 1px 0 rgb(116,159,173),2px 2px 0 rgb(94,137,151),3px 3px 0 rgb(72,115,129), 4px 4px 0 rgb(50,93,107),5px 5px 4px rgba(0,0,0,0.6),5px 5px 1px rgba(0,0,0,0.5),0px 0px 4px rgba(0,0,0,.2);
+}
+
+@media only screen and (max-width: 500px) {
+  .masthead {
+    padding: 3em 0;
+  }
+
+  .masthead-heading {
+    font-size: 3em;
+  }
+}
+
+section {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: rgb(126, 153, 218);
+  padding: 1em;
+  padding-bottom: 1em;
+  border-radius: 1em;
+}
+
+.section-subheading {
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  /* Layout */
+  margin: 2em 0 1em 0;
+}
+
+.section-content {
+  /* Typography Declarations */
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.content-footer {
+  padding: 3em 0;
+  background-color: rgb(88, 52, 33);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(126,153,218);
+}
+
+a:visited {
+  color: rgb(88, 107, 152);
+}
+
+.social > ul {
+  margin-left: -1.5em;
+}
+
+.social > li {
+  display: inline-block;
+  margin-right: 2em;
+}
+
+@media only screen and (max-width: 400px) {
+  .content-footer {
+    font-size: .75em;
+  }
+}
